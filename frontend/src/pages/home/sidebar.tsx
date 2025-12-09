@@ -183,11 +183,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton className="data-[state=open]:bg-main  data-[state=open]:text-main-foreground  data-[state=open]:outline-border data-[state=open]:outline-2">
+            <SidebarMenuButton
+              size="lg"
+              className="data-[state=open]:bg-main data-[state=open]:text-main-foreground data-[state=open]:outline-border data-[state=open]:outline-2"
+            >
               <div className="flex aspect-square size-8 items-center justify-center rounded-base">
                 <activeTeam.logo className="size-4" />
               </div>
-              <div className="grid flex-1 text-left text-sm   leading-tight">
+              <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-heading">{activeTeam.name}</span>
               </div>
             </SidebarMenuButton>
