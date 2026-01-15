@@ -8,7 +8,10 @@ import (
 const Port = ":8080"
 
 func server(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Server started . . . . ")
+	_, err := fmt.Fprintf(w, "Server started . . . . ")
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func main() {
