@@ -1,14 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: nord --default, abyss --prefersdark, cupcake, dracula;
+  themes:
+    pastel --default,
+    forest --prefersdark;
   root: ":root";
-  include: ;
-  exclude: ;
-  prefix: ;
+  include:;
+  exclude:;
+  prefix:;
   logs: true;
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box; /* Ensures padding/border are included in element's total width/height */
 }

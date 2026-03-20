@@ -1,15 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./HomePage/index.tsx";
 import Settings from "./Settings/index.tsx";
-import NotFoundPage from "./NotFound/index.tsx";
 
-const Root = () => {
+const App = () => {
   const router = createBrowserRouter([
     { path: "/", element: <HomePage /> },
     { path: "/settings", element: <Settings /> },
-    { path: "*", element: <NotFoundPage /> },
   ]);
   return <RouterProvider router={router} />;
 };
 
-export default Root;
+export default App;
